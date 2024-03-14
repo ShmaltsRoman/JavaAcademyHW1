@@ -1,0 +1,29 @@
+POST http://localhost:8080/categories/
+Content-Type: application/json
+
+{
+  "name": "test"
+}
+
+###
+GET http://localhost:8080/categories/
+Content-Type: application/json
+
+###
+GET http://localhost:8080/categories/2
+Content-Type: application/json
+
+###
+PUT http://localhost:8080/categories/2
+Content-Type: application/json
+
+{
+  "name": "Music2"
+}
+
+###
+DELETE http://localhost:8080/categories/3
+Content-Type: application/json
+
+
+###

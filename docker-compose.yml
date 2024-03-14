@@ -1,0 +1,19 @@
+version: "3"
+services:
+  consumer:
+    build: ./consumer-service
+    networks:
+      - consumer-supplier
+    environment:
+      SUPPLIER_HOST: supplier
+    depends_on:
+      - supplier
+
+  supplier:
+    build: ./supplier-service
+    container_name: supplier
+    networks:
+      - consumer-supplier
+
+networks:
+  consumer-supplier:

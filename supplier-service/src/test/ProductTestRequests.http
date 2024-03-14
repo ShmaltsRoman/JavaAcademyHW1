@@ -1,0 +1,51 @@
+POST http://localhost:8080/products/
+Content-Type: application/json
+
+{
+  "name": "TestProduct",
+  "description": "dd",
+  "price": 12.32,
+  "categoryId": 6
+
+}
+
+###
+
+PUT http://localhost:8080/products/2
+Content-Type: application/json
+
+{
+  "name": "TestProduct",
+  "price": 12.32,
+  "categoryId": 2
+
+}
+
+###
+
+GET http://localhost:8080/products/
+Content-Type: application/json
+
+###
+
+GET http://localhost:8080/products/
+Content-Type: application/json
+
+###
+GET http://localhost:8080/products/22
+Content-Type: application/json
+
+###
+PUT http://localhost:8080/products/2
+Content-Type: application/json
+
+{
+  "name": "Music2"
+}
+
+###
+DELETE http://localhost:8080/products/3
+Content-Type: application/json
+
+
+###
